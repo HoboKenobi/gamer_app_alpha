@@ -1,4 +1,5 @@
 class RetailersController < ApplicationController
   def new
-  end
+  		@bestbuy = Retailer.find_by(name: "bestbuy")
+end
 end
