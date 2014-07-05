@@ -29,10 +29,12 @@ describe "Static pages" do
 	end
 	
 	describe "Weekly Deals page" do
+		let(:retailer) { FactoryGirl.create(:retailer) }
 		before { visit week_path }
 		
 		let(:page_title) { 'Deals of the Week' }
 		let(:heading) { 'Deals of the week' }
+		let(:heading) { retailer.name }
 		
 		it_should_behave_like "all static pages"
 	end

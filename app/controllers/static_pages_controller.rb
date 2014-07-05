@@ -6,6 +6,7 @@ class StaticPagesController < ApplicationController
   end
 
   def week
+  	@bestbuy = Retailer.find(1)
   end
 
   def free
