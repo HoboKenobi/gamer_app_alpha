@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   root 'static_pages#home'
   match '/signup', to: 'users#new', via: 'get'
   match '/hot', to: 'static_pages#hot', via: 'get'
-  match '/week', to: 'static_pages#week', via: 'get'
+  match '/week', to: 'retailers#week', via: 'get'
   match '/free', to: 'static_pages#free', via: 'get'
   
   # The priority is based upon order of creation: first created -> highest priority.

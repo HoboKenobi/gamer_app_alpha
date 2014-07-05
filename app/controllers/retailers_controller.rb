@@ -1,5 +1,5 @@
 class RetailersController < ApplicationController
-  def new
-  
-end
+  def week
+  	@bestbuy = Retailer.find_by(name: "bestbuy")
+  end
 end
