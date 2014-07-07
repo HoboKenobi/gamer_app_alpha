@@ -7,3 +7,8 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
 Retailer.create(name: "bestbuy")
+Retailer.create(name: "eb games")
+Retailer.create(name: "future shop")
+Retailer.create(name: "target")
+Retailer.create(name: "the source")
+Retailer.create(name: "wal-mart")
