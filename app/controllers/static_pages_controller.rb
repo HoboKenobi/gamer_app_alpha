@@ -12,6 +12,8 @@ class StaticPagesController < ApplicationController
   	@target = Retailer.find_by(name: "target")
   	@thesource = Retailer.find_by(name: "the source")
   	@walmart = Retailer.find_by(name: "wal-mart")
+  	@psn = Retailer.find_by(name: "psn")
+  	@xboxlive = Retailer.find_by(name: "xbox live")
   end
 
   def free
