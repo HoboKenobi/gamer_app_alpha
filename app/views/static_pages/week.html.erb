@@ -1,129 +1,197 @@
 <% provide(:title, 'Deals of the Week') %>
 
-<center><h1>Deals of the Week</h1></center>
+<center><h1>Deals of the Week</h1><h5>(July 4th, 2014 - July 10th, 2014)</h5></center>
 
-	<ul class="nav nav-pills">
-	  <li><a href="#bestbuy">Bestbuy</a></li>
-	  <li><a href="#ebgames">EB Games</a></li>
-	  <li><a href="#futureshop">Future Shop</a></li>
-	  <li><a href="#target">Target</a></li>
-	  <li><a href="#thesource">The Source</a></li>
-	  <li><a href="#walmart">Wal-Mart</a></li>
-	  <li><a href="#psn">PSN</a></li>
-	  <li><a href="#xboxlive">Xbox Live</a></li>
-	</ul>
+<!-- mini navbar -->
+<ul class="nav nav-pills navbar-static-top">
+  <li><a href="#bestbuy">Bestbuy</a></li>
+  <li><a href="#ebgames">EB Games</a></li>
+  <li><a href="#futureshop">Future Shop</a></li>
+  <li><a href="#target">Target</a></li>
+  <li><a href="#thesource">The Source</a></li>
+  <li><a href="#walmart">Wal-Mart</a></li>
+  <li><a href="#psn">PSN</a></li>
+  <li><a href="#xboxlive">Xbox Live</a></li>
+</ul>
 
+<!-- start of accordion -->
 <div class="panel-group" id="accordion">
+
+<!-- Bestbuy -->
   <div class="panel panel-default">
     <div class="panel-heading">
       <h4 class="panel-title">
         <a data-toggle="collapse" href="#collapseOne">
-          <div id="bestbuy"> <%= @bestbuy.name.upcase %> </div>
+          <div id="bestbuy"> <%= @bestbuy.name.upcase %> (<%= @bestbuy.dotws.count %>)</div>
         </a>
       </h4>
     </div>
     <div id="collapseOne" class="panel-collapse collapse in">
       <div class="panel-body">
-        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+      	<% if @bestbuy.dotws.any? %>
+      			<% (@bestbuy.dotws.ids).each do |i| %>
+      				<ul>
+      					<li><%= @bestbuy.dotws.find(i).content %></li>
+      				</ul>	
+      			<% end %>	
+      	<% end %>
       </div>
     </div>
   </div>
+  
+<!-- EB Games -->
   <div class="panel panel-default">
     <div class="panel-heading">
       <h4 class="panel-title">
         <a data-toggle="collapse" href="#collapseTwo">
-          <div id="ebgames"> <%= @ebgames.name.upcase %> </div>
+          <div id="ebgames"> <%= @ebgames.name.upcase %> (<%= @ebgames.dotws.count %>)</div>
         </a>
       </h4>
     </div>
     <div id="collapseTwo" class="panel-collapse collapse in">
       <div class="panel-body">
-        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+      	<% if @ebgames.dotws.any? %>
+      		<% (@ebgames.dotws.ids).each do |i| %>
+      			<ul>
+      				<li><%= @ebgames.dotws.find(i).content %></li>
+      			</ul>	
+      		<% end %>	
+      	<% end %>
       </div>
     </div>
   </div>
+  
+<!-- Future Shop -->
   <div class="panel panel-default">
     <div class="panel-heading">
       <h4 class="panel-title">
         <a data-toggle="collapse" href="#collapseThree">
-          <div id="futureshop"> <%= @futureshop.name.upcase %> </div>
+          <div id="futureshop"> <%= @futureshop.name.upcase %> (<%= @futureshop.dotws.count %>)</div>
         </a>
       </h4>
     </div>
     <div id="collapseThree" class="panel-collapse collapse in">
       <div class="panel-body">
-        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-      </div>
-    </div>
+      	<% if @futureshop.dotws.any? %>
+      		<% (@futureshop.dotws.ids).each do |i| %>
+      			<ul>
+      				<li><%= @futureshop.dotws.find(i).content %></li>
+      			</ul>	
+      		<% end %>	
+      	<% end %>
+       </div>
+     </div>
   </div>
+  
+<!-- Target -->
   <div class="panel panel-default">
     <div class="panel-heading">
       <h4 class="panel-title">
         <a data-toggle="collapse" href="#collapseFour">
-          <div id="target"> <%= @target.name.upcase %> </div>
+          <div id="target"> <%= @target.name.upcase %> (<%= @target.dotws.count %>)</div>
         </a>
       </h4>
     </div>
     <div id="collapseFour" class="panel-collapse collapse in">
       <div class="panel-body">
-        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+      	<% if @target.dotws.any? %>
+      		<% (@target.dotws.ids).each do |i| %>
+      			<ul>
+      				<li><%= @target.dotws.find(i).content %></li>
+      			</ul>	
+      		<% end %>	
+      	<% end %>
       </div>
     </div>
   </div>
+  
+<!-- The Source -->
   <div class="panel panel-default">
     <div class="panel-heading">
       <h4 class="panel-title">
         <a data-toggle="collapse" href="#collapseFive">
-          <div id="thesource"> <%= @thesource.name.upcase %> </div>
+          <div id="thesource"> <%= @thesource.name.upcase %> (<%= @thesource.dotws.count %>)</div>
         </a>
       </h4>
     </div>
     <div id="collapseFive" class="panel-collapse collapse in">
       <div class="panel-body">
-        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+      	<% if @thesource.dotws.any? %>
+      		<% (@thesource.dotws.ids).each do |i| %>
+      			<ul>
+      				<li><%= @thesource.dotws.find(i).content %></li>
+      			</ul>	
+      		<% end %>	
+      	<% end %>
       </div>
     </div>
   </div>
+  
+<!-- Wal-Mart -->
   <div class="panel panel-default">
     <div class="panel-heading">
       <h4 class="panel-title">
         <a data-toggle="collapse" href="#collapseSix">
-          <div id="walmart"> <%= @walmart.name.upcase %> </div>
+          <div id="walmart"> <%= @walmart.name.upcase %> (<%= @walmart.dotws.count %>)</div>
         </a>
       </h4>
     </div>
     <div id="collapseSix" class="panel-collapse collapse in">
       <div class="panel-body">
-        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+      	<% if @walmart.dotws.any? %>
+      		<% (@walmart.dotws.ids).each do |i| %>
+      			<ul>
+      				<li><%= @walmart.dotws.find(i).content %></li>
+      			</ul>	
+      		<% end %>	
+      	<% end %>
       </div>
     </div>
   </div>
+  
+<!-- PSN -->
   <div class="panel panel-default">
     <div class="panel-heading">
       <h4 class="panel-title">
         <a data-toggle="collapse" href="#collapseSeven">
-          <div id="psn"> <%= @psn.name.upcase %> </div>
+          <div id="psn"> <%= @psn.name.upcase %> (<%= @psn.dotws.count %>)</div>
         </a>
       </h4>
     </div>
     <div id="collapseSeven" class="panel-collapse collapse in">
       <div class="panel-body">
-        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+        <% if @psn.dotws.any? %>
+      		<% (@psn.dotws.ids).each do |i| %>
+      			<ul>
+      				<li><%= @psn.dotws.find(i).content %></li>
+      			</ul>	
+      		<% end %>	
+      	<% end %>
       </div>
     </div>
   </div>
+  
+<!-- XBOX Live -->
   <div class="panel panel-default">
     <div class="panel-heading">
       <h4 class="panel-title">
         <a data-toggle="collapse" href="#collapseEight">
-          <div id="xboxlive"> <%= @xboxlive.name.upcase %> </div>
+          <div id="xboxlive"> <%= @xboxlive.name.upcase %> (<%= @xboxlive.dotws.count %>)</div>
         </a>
       </h4>
     </div>
     <div id="collapseEight" class="panel-collapse collapse in">
       <div class="panel-body">
-        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+      	<% if @xboxlive.dotws.any? %>
+      		<% (@xboxlive.dotws.ids).each do |i| %>
+      			<ul>
+      				<li><%= @xboxlive.dotws.find(i).content %></li>
+      			</ul>	
+      		<% end %>	
+      	<% end %>
       </div>
     </div>
   </div>
+  
+<!-- end of accordion -->
 </div>
