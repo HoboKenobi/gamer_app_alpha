@@ -17,10 +17,10 @@ Retailer.create(name: "xbox live")
 
 # Bestbuy's deals of the week
 # 1 deal on each line
-Dotw.create(content: "Assassin's Creed - Black Flag ($64.99) (XBOX ONE) (PS4)", retailer_id: "1")
-Dotw.create(content: "Infamous - Second Son ($64.99) (PS4)", retailer_id: "1")
-Dotw.create(content: "Pikman 3 ($49.99) (WII U)", retailer_id: "1")
-Dotw.create(content: "Pre-order 2 games and get 30% off each", retailer_id: "1")
+Dotw.create(content: "[ONE/PS4/360/PS3] Assassin's Creed - Black Flag ($64.99)", retailer_id: "1")
+Dotw.create(content: "[PS4] Infamous - Second Son ($64.99)", retailer_id: "1")
+Dotw.create(content: "[WII U] Pikman 3 ($49.99)", retailer_id: "1")
+Dotw.create(content: "[ONE/PS4/360/PS3/WII U/WII/3DS/VITA] Pre-order 2 games and get 30% off each", retailer_id: "1")
 
 # EB Games' deals of the week
 # 1 deal on each line

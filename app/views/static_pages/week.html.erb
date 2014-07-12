@@ -1,17 +1,17 @@
 <% provide(:title, 'Deals of the Week') %>
 
-<center><h1>Deals of the Week</h1><h5>(July 4th, 2014 - July 10th, 2014)</h5></center>
+<center><h1><strong>Deals of the Week</strong></h1><h5>(July 4th, 2014 - July 10th, 2014)</h5></center>
 
 <!-- mini navbar -->
 <ul class="nav nav-pills">
-  <li><a href="#bestbuy">Bestbuy</a></li>
-  <li><a href="#ebgames">EB Games</a></li>
-  <li><a href="#futureshop">Future Shop</a></li>
-  <li><a href="#target">Target</a></li>
-  <li><a href="#thesource">The Source</a></li>
-  <li><a href="#walmart">Wal-Mart</a></li>
-  <li><a href="#psn">PSN</a></li>
-  <li><a href="#xboxlive">Xbox Live</a></li>
+  <li><a href="#bestbuy"><%= image_tag "bestbuy_logo.png" %></a></li>
+  <li><a href="#ebgames"><%= image_tag "ebgames_logo.png" %></a></li>
+  <li><a href="#futureshop"><%= image_tag "futureshop_logo.png" %></a></li>
+  <li><a href="#target"><%= image_tag "target_logo.png" %></a></li>
+  <li><a href="#thesource"><%= image_tag "thesource_logo.png" %></a></li>
+  <li><a href="#walmart"><%= image_tag "walmart_logo.png" %></a></li>
+  <li><a href="#psn"><%= image_tag "psn_logo.png" %></a></li>
+  <li><a href="#xboxlive"><%= image_tag "xboxlive_logo.png" %></a></li>
 </ul>
 
 <!-- start of accordion -->
@@ -29,11 +29,12 @@
     <div id="collapseOne" class="panel-collapse collapse in">
       <div class="panel-body">
       	<% if @bestbuy.dotws.any? %>
-      			<% (@bestbuy.dotws.ids).each do |i| %>
-      				<ul>
-      					<li><%= @bestbuy.dotws.find(i).content %></li>
-      				</ul>	
-      			<% end %>	
+      		<% (@bestbuy.dotws.ids).each do |i| %>
+      			<ul>
+      				<li><%= @bestbuy.dotws.find(i).content %></li>
+      			</ul>	
+      		<% end %>	
+      		<a href="#">Source</a>
       	<% end %>
       </div>
     </div>
@@ -56,6 +57,7 @@
       				<li><%= @ebgames.dotws.find(i).content %></li>
       			</ul>	
       		<% end %>	
+      		<a href="#">Source</a>
       	<% end %>
       </div>
     </div>
@@ -78,6 +80,7 @@
       				<li><%= @futureshop.dotws.find(i).content %></li>
       			</ul>	
       		<% end %>	
+      		<a href="#">Source</a>
       	<% end %>
        </div>
      </div>
@@ -99,7 +102,8 @@
       			<ul>
       				<li><%= @target.dotws.find(i).content %></li>
       			</ul>	
-      		<% end %>	
+      		<% end %>
+      		<a href="#">Source</a>	
       	<% end %>
       </div>
     </div>
@@ -121,7 +125,8 @@
       			<ul>
       				<li><%= @thesource.dotws.find(i).content %></li>
       			</ul>	
-      		<% end %>	
+      		<% end %>
+      		<a href="#">Source</a>	
       	<% end %>
       </div>
     </div>
@@ -144,6 +149,7 @@
       				<li><%= @walmart.dotws.find(i).content %></li>
       			</ul>	
       		<% end %>	
+      		<a href="#">Source</a>
       	<% end %>
       </div>
     </div>
@@ -166,6 +172,7 @@
       				<li><%= @psn.dotws.find(i).content %></li>
       			</ul>	
       		<% end %>	
+      		<a href="#">Source</a>
       	<% end %>
       </div>
     </div>
@@ -187,7 +194,8 @@
       			<ul>
       				<li><%= @xboxlive.dotws.find(i).content %></li>
       			</ul>	
-      		<% end %>	
+      		<% end %>
+      		<a href="#">Source</a>	
       	<% end %>
       </div>
     </div>
