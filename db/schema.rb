@@ -15,6 +15,7 @@ ActiveRecord::Schema.define(version: 20140709170951) do
 
   create_table "dotws", force: true do |t|
     t.string   "content"
+    t.float    "price"
     t.integer  "retailer_id"
     t.datetime "created_at"
     t.datetime "updated_at"

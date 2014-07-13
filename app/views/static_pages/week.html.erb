@@ -18,7 +18,7 @@
 <div class="panel-group" id="accordion">
 
 <!-- Bestbuy -->
-  <div class="panel panel-default">
+  <div class="panel panel-primary">
     <div class="panel-heading">
       <h4 class="panel-title">
         <a data-toggle="collapse" href="#collapseOne">
@@ -31,7 +31,11 @@
       	<% if @bestbuy.dotws.any? %>
       		<% (@bestbuy.dotws.ids).each do |i| %>
       			<ul>
-      				<li><%= @bestbuy.dotws.find(i).content %></li>
+      				<% if @bestbuy.dotws.find(i).price == 0.0 %>
+      					<li><%= @bestbuy.dotws.find(i).content %></li>
+      				<% else %>
+      					<li><%= @bestbuy.dotws.find(i).content %> ($<%= @bestbuy.dotws.find(i).price %>)</li>
+      				<% end %>
       			</ul>	
       		<% end %>	
       		<a href="#">Source</a>
@@ -41,7 +45,7 @@
   </div>
   
 <!-- EB Games -->
-  <div class="panel panel-default">
+  <div class="panel panel-primary">
     <div class="panel-heading">
       <h4 class="panel-title">
         <a data-toggle="collapse" href="#collapseTwo">
@@ -54,7 +58,11 @@
       	<% if @ebgames.dotws.any? %>
       		<% (@ebgames.dotws.ids).each do |i| %>
       			<ul>
-      				<li><%= @ebgames.dotws.find(i).content %></li>
+      				<% if @ebgames.dotws.find(i).price == 0.0 %>
+      					<li><%= @ebgames.dotws.find(i).content %></li>
+      				<% else %>
+      					<li><%= @ebgames.dotws.find(i).content %> ($<%= @ebgames.dotws.find(i).price %>)</li>
+      				<% end %>
       			</ul>	
       		<% end %>	
       		<a href="#">Source</a>
@@ -64,7 +72,7 @@
   </div>
   
 <!-- Future Shop -->
-  <div class="panel panel-default">
+  <div class="panel panel-primary">
     <div class="panel-heading">
       <h4 class="panel-title">
         <a data-toggle="collapse" href="#collapseThree">
@@ -77,7 +85,11 @@
       	<% if @futureshop.dotws.any? %>
       		<% (@futureshop.dotws.ids).each do |i| %>
       			<ul>
-      				<li><%= @futureshop.dotws.find(i).content %></li>
+      				<% if @futureshop.dotws.find(i).price == 0.0 %>
+      					<li><%= @futurehsop.dotws.find(i).content %></li>
+      				<% else %>
+      					<li><%= @futureshop.dotws.find(i).content %> ($<%= @futureshop.dotws.find(i).price %>)</li>
+      				<% end %>
       			</ul>	
       		<% end %>	
       		<a href="#">Source</a>
@@ -87,7 +99,7 @@
   </div>
   
 <!-- Target -->
-  <div class="panel panel-default">
+  <div class="panel panel-primary">
     <div class="panel-heading">
       <h4 class="panel-title">
         <a data-toggle="collapse" href="#collapseFour">
@@ -100,7 +112,11 @@
       	<% if @target.dotws.any? %>
       		<% (@target.dotws.ids).each do |i| %>
       			<ul>
-      				<li><%= @target.dotws.find(i).content %></li>
+      				<% if @target.dotws.find(i).price == 0.0 %>
+      					<li><%= @target.dotws.find(i).content %></li>
+      				<% else %>
+      					<li><%= @target.dotws.find(i).content %> ($<%= @target.dotws.find(i).price %>)</li>
+      				<% end %>
       			</ul>	
       		<% end %>
       		<a href="#">Source</a>	
@@ -110,7 +126,7 @@
   </div>
   
 <!-- The Source -->
-  <div class="panel panel-default">
+  <div class="panel panel-primary">
     <div class="panel-heading">
       <h4 class="panel-title">
         <a data-toggle="collapse" href="#collapseFive">
@@ -123,7 +139,11 @@
       	<% if @thesource.dotws.any? %>
       		<% (@thesource.dotws.ids).each do |i| %>
       			<ul>
-      				<li><%= @thesource.dotws.find(i).content %></li>
+      				<% if @thesource.dotws.find(i).price == 0.0 %>
+      					<li><%= @thesource.dotws.find(i).content %></li>
+      				<% else %>
+      					<li><%= @thesource.dotws.find(i).content %> ($<%= @thesource.dotws.find(i).price %>)</li>
+      				<% end %>
       			</ul>	
       		<% end %>
       		<a href="#">Source</a>	
@@ -133,7 +153,7 @@
   </div>
   
 <!-- Wal-Mart -->
-  <div class="panel panel-default">
+  <div class="panel panel-primary">
     <div class="panel-heading">
       <h4 class="panel-title">
         <a data-toggle="collapse" href="#collapseSix">
@@ -146,7 +166,11 @@
       	<% if @walmart.dotws.any? %>
       		<% (@walmart.dotws.ids).each do |i| %>
       			<ul>
-      				<li><%= @walmart.dotws.find(i).content %></li>
+      				<% if @walmart.dotws.find(i).price == 0.0 %>
+      					<li><%= @walmart.dotws.find(i).content %></li>
+      				<% else %>
+      					<li><%= @walmart.dotws.find(i).content %> ($<%= @walmart.dotws.find(i).price %>)</li>
+      				<% end %>
       			</ul>	
       		<% end %>	
       		<a href="#">Source</a>
@@ -156,7 +180,7 @@
   </div>
   
 <!-- PSN -->
-  <div class="panel panel-default">
+  <div class="panel panel-primary">
     <div class="panel-heading">
       <h4 class="panel-title">
         <a data-toggle="collapse" href="#collapseSeven">
@@ -169,7 +193,11 @@
         <% if @psn.dotws.any? %>
       		<% (@psn.dotws.ids).each do |i| %>
       			<ul>
-      				<li><%= @psn.dotws.find(i).content %></li>
+      				<% if @psn.dotws.find(i).price == 0.0 %>
+      					<li><%= @psn.dotws.find(i).content %></li>
+      				<% else %>
+      					<li><%= @psn.dotws.find(i).content %> ($<%= @psn.dotws.find(i).price %>)</li>
+      				<% end %>
       			</ul>	
       		<% end %>	
       		<a href="#">Source</a>
@@ -179,7 +207,7 @@
   </div>
   
 <!-- XBOX Live -->
-  <div class="panel panel-default">
+  <div class="panel panel-primary">
     <div class="panel-heading">
       <h4 class="panel-title">
         <a data-toggle="collapse" href="#collapseEight">
@@ -192,7 +220,11 @@
       	<% if @xboxlive.dotws.any? %>
       		<% (@xboxlive.dotws.ids).each do |i| %>
       			<ul>
-      				<li><%= @xboxlive.dotws.find(i).content %></li>
+      				<% if @xboxlive.dotws.find(i).price == 0.0 %>
+      					<li><%= @xboxlive.dotws.find(i).content %></li>
+      				<% else %>
+      					<li><%= @xboxlive.dotws.find(i).content %> ($<%= @xboxlive.dotws.find(i).price %>)</li>
+      				<% end %>
       			</ul>	
       		<% end %>
       		<a href="#">Source</a>	

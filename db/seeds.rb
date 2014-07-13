@@ -17,53 +17,47 @@ Retailer.create(name: "xbox live")
 
 # Bestbuy's deals of the week
 # 1 deal on each line
-Dotw.create(content: "[ONE/PS4/360/PS3] Assassin's Creed - Black Flag ($64.99)", retailer_id: "1")
-Dotw.create(content: "[PS4] Infamous - Second Son ($64.99)", retailer_id: "1")
-Dotw.create(content: "[WII U] Pikman 3 ($49.99)", retailer_id: "1")
-Dotw.create(content: "[ONE/PS4/360/PS3/WII U/WII/3DS/VITA] Pre-order 2 games and get 30% off each", retailer_id: "1")
+Dotw.create(content: "[XONE/PS4/360/PS3] Assassin's Creed - Black Flag", price: "64.99", retailer_id: "1")
+Dotw.create(content: "[PS4] Infamous - Second Son", price: "64.99", retailer_id: "1")
+Dotw.create(content: "[WII U] Pikman 3", price: "49.99", retailer_id: "1")
+Dotw.create(content: "[360] Gears of War 3", price: "9.99", retailer_id: "1")
+Dotw.create(content: "[3DS] Mario and Luigi - Dream Team", price: "29.99", retailer_id: "1")
+Dotw.create(content: "[3DS] Virtue's Last Reward", price: "29.99", retailer_id: "1")
+Dotw.create(content: "[ONE/PS4/WII U/360/PS3/WII/3DS/VITA] Pre-order 2 games and get 30% off each", price: "0.0", retailer_id: "1")
 
 # EB Games' deals of the week
 # 1 deal on each line
-Dotw.create(content: "Assassin's Creed - Black Flag ($64.99) (XBOX ONE) (PS4)", retailer_id: "2")
-Dotw.create(content: "Infamous - Second Son ($64.99) (PS4)", retailer_id: "2")
-Dotw.create(content: "Pre-order 2 games and get 30% off each", retailer_id: "2")
+Dotw.create(content: "[XONE/PS4/360/PS3] Assassin's Creed - Black Flag", price: "64.99", retailer_id: "2")
+Dotw.create(content: "[PS4] Infamous - Second Son", price: "64.99", retailer_id: "2")
+Dotw.create(content: "[WII U] Pikman 3", price: "49.99", retailer_id: "2")
+Dotw.create(content: "[360] Gears of War 3", price: "9.99", retailer_id: "2")
 
 # Future Shop's deals of the week
 # 1 deal on each line
-Dotw.create(content: "Assassin's Creed - Black Flag ($64.99) (XBOX ONE) (PS4)", retailer_id: "3")
-Dotw.create(content: "Infamous - Second Son ($64.99) (PS4)", retailer_id: "3")
-Dotw.create(content: "Pikman 3 ($49.99) (WII U)", retailer_id: "3")
-Dotw.create(content: "Mario and Luigi - Dream Team ($29.99) (3DS)", retailer_id: "3")
-Dotw.create(content: "Pre-order 2 games and get 30% off each", retailer_id: "3")
+Dotw.create(content: "[3DS] Mario and Luigi - Dream Team", price: "29.99", retailer_id: "3")
+Dotw.create(content: "[3DS] Virtue's Last Reward", price: "29.99", retailer_id: "3")
 
 # Target's deals of the week
 # 1 deal on each line
-Dotw.create(content: "Assassin's Creed - Black Flag ($64.99) (XBOX ONE) (PS4)", retailer_id: "4")
-Dotw.create(content: "Infamous - Second Son ($64.99) (PS4)", retailer_id: "4")
 
 # The Source's deals of the week
 # 1 deal on each line
-
+Dotw.create(content: "[XONE/PS4/360/PS3] Assassin's Creed - Black Flag", price: "64.99", retailer_id: "5")
+Dotw.create(content: "[PS4] Infamous - Second Son", price: "64.99", retailer_id: "5")
+Dotw.create(content: "[WII U] Pikman 3", price: "49.99", retailer_id: "5")
+Dotw.create(content: "[360] Gears of War 3", price: "9.99", retailer_id: "5")
+Dotw.create(content: "[3DS] Mario and Luigi - Dream Team", price: "29.99", retailer_id: "5")
 
 # Wal-Mart's deals of the week
 # 1 deal on each line
-Dotw.create(content: "Pre-order 2 games and get 30% off each", retailer_id: "6")
+Dotw.create(content: "[PS4] Infamous - Second Son", price: "64.99", retailer_id: "6")
+Dotw.create(content: "[WII U] Pikman 3", price: "49.99", retailer_id: "6")
+Dotw.create(content: "[360] Gears of War 3", price: "9.99", retailer_id: "6")
 
 # PSN's deals of the week
 # 1 deal on each line
-Dotw.create(content: "Assassin's Creed - Black Flag ($64.99) (XBOX ONE) (PS4)", retailer_id: "7")
-Dotw.create(content: "Infamous - Second Son ($64.99) (PS4)", retailer_id: "7")
-Dotw.create(content: "Pikman 3 ($49.99) (WII U)", retailer_id: "7")
-Dotw.create(content: "Mario and Luigi - Dream Team ($29.99) (3DS)", retailer_id: "7")
-Dotw.create(content: "Virtue's Last Reward ($29.99) (3DS)", retailer_id: "7")
-Dotw.create(content: "Pre-order 2 games and get 30% off each", retailer_id: "7")
+Dotw.create(content: "[ONE/PS4/WII U/360/PS3/WII/3DS/VITA] Pre-order 2 games and get 30% off each", price: "0.0", retailer_id: "7")
 
 # Xbox Live's deals of the week
 # 1 deal on each line
-Dotw.create(content: "Gears of War 3 ($19.99) (XBOX 360)", retailer_id: "8")
-Dotw.create(content: "Assassin's Creed - Black Flag ($64.99) (XBOX ONE) (PS4)", retailer_id: "8")
-Dotw.create(content: "Infamous - Second Son ($64.99) (PS4)", retailer_id: "8")
-Dotw.create(content: "Pikman 3 ($49.99) (WII U)", retailer_id: "8")
-Dotw.create(content: "Mario and Luigi - Dream Team ($29.99) (3DS)", retailer_id: "8")
-Dotw.create(content: "Virtue's Last Reward ($29.99) (3DS)", retailer_id: "8")
-Dotw.create(content: "Pre-order 2 games and get 30% off each", retailer_id: "8")
+Dotw.create(content: "[360] Gears of War 3", price: "9.99", retailer_id: "8")
