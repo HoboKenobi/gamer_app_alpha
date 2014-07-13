@@ -32,9 +32,9 @@
       		<% (@bestbuy.dotws.ids).each do |i| %>
       			<ul>
       				<% if @bestbuy.dotws.find(i).price == 0.0 %>
-      					<li><%= @bestbuy.dotws.find(i).content %></li>
+      					<li><strong><%= @bestbuy.dotws.find(i).content %></strong></li>
       				<% else %>
-      					<li><%= @bestbuy.dotws.find(i).content %> ($<%= @bestbuy.dotws.find(i).price %>)</li>
+      					<li><strong><%= @bestbuy.dotws.find(i).content %> </strong><span class="price">($<%= @bestbuy.dotws.find(i).price %>)</span></li>
       				<% end %>
       			</ul>	
       		<% end %>	
@@ -59,9 +59,9 @@
       		<% (@ebgames.dotws.ids).each do |i| %>
       			<ul>
       				<% if @ebgames.dotws.find(i).price == 0.0 %>
-      					<li><%= @ebgames.dotws.find(i).content %></li>
+      					<li><strong><%= @ebgames.dotws.find(i).content %></strong></li>
       				<% else %>
-      					<li><%= @ebgames.dotws.find(i).content %> ($<%= @ebgames.dotws.find(i).price %>)</li>
+      					<li><strong><%= @ebgames.dotws.find(i).content %> </strong><span class="price">($<%= @ebgames.dotws.find(i).price %>)</span></li>
       				<% end %>
       			</ul>	
       		<% end %>	
@@ -86,9 +86,9 @@
       		<% (@futureshop.dotws.ids).each do |i| %>
       			<ul>
       				<% if @futureshop.dotws.find(i).price == 0.0 %>
-      					<li><%= @futurehsop.dotws.find(i).content %></li>
+      					<li><strong><%= @futurehsop.dotws.find(i).content %></strong></li>
       				<% else %>
-      					<li><%= @futureshop.dotws.find(i).content %> ($<%= @futureshop.dotws.find(i).price %>)</li>
+      					<li><strong><%= @futureshop.dotws.find(i).content %> </strong><span class="price">($<%= @futureshop.dotws.find(i).price %>)</span></li>
       				<% end %>
       			</ul>	
       		<% end %>	
@@ -113,9 +113,9 @@
       		<% (@target.dotws.ids).each do |i| %>
       			<ul>
       				<% if @target.dotws.find(i).price == 0.0 %>
-      					<li><%= @target.dotws.find(i).content %></li>
+      					<li><strong><%= @target.dotws.find(i).content %></strong></li>
       				<% else %>
-      					<li><%= @target.dotws.find(i).content %> ($<%= @target.dotws.find(i).price %>)</li>
+      					<li><strong><%= @target.dotws.find(i).content %> </strong><span class="price">($<%= @target.dotws.find(i).price %>)</span></li>
       				<% end %>
       			</ul>	
       		<% end %>
@@ -140,9 +140,9 @@
       		<% (@thesource.dotws.ids).each do |i| %>
       			<ul>
       				<% if @thesource.dotws.find(i).price == 0.0 %>
-      					<li><%= @thesource.dotws.find(i).content %></li>
+      					<li><strong><%= @thesource.dotws.find(i).content %></strong></li>
       				<% else %>
-      					<li><%= @thesource.dotws.find(i).content %> ($<%= @thesource.dotws.find(i).price %>)</li>
+      					<li><strong><%= @thesource.dotws.find(i).content %> </strong><span class="price">($<%= @thesource.dotws.find(i).price %>)</span></li>
       				<% end %>
       			</ul>	
       		<% end %>
@@ -167,9 +167,9 @@
       		<% (@walmart.dotws.ids).each do |i| %>
       			<ul>
       				<% if @walmart.dotws.find(i).price == 0.0 %>
-      					<li><%= @walmart.dotws.find(i).content %></li>
+      					<li><strong><%= @walmart.dotws.find(i).content %></strong></li>
       				<% else %>
-      					<li><%= @walmart.dotws.find(i).content %> ($<%= @walmart.dotws.find(i).price %>)</li>
+      					<li><strong><%= @walmart.dotws.find(i).content %> </strong><span class="price">($<%= @walmart.dotws.find(i).price %>)</span></li>
       				<% end %>
       			</ul>	
       		<% end %>	
@@ -194,9 +194,9 @@
       		<% (@psn.dotws.ids).each do |i| %>
       			<ul>
       				<% if @psn.dotws.find(i).price == 0.0 %>
-      					<li><%= @psn.dotws.find(i).content %></li>
+      					<li><strong><%= @psn.dotws.find(i).content %></strong></li>
       				<% else %>
-      					<li><%= @psn.dotws.find(i).content %> ($<%= @psn.dotws.find(i).price %>)</li>
+      					<li><strong><%= @psn.dotws.find(i).content %> </strong><span class="price">($<%= @psn.dotws.find(i).price %>)</span></li>
       				<% end %>
       			</ul>	
       		<% end %>	
@@ -221,9 +221,9 @@
       		<% (@xboxlive.dotws.ids).each do |i| %>
       			<ul>
       				<% if @xboxlive.dotws.find(i).price == 0.0 %>
-      					<li><%= @xboxlive.dotws.find(i).content %></li>
+      					<li><strong><%= @xboxlive.dotws.find(i).content %></strong></li>
       				<% else %>
-      					<li><%= @xboxlive.dotws.find(i).content %> ($<%= @xboxlive.dotws.find(i).price %>)</li>
+      					<li><strong><%= @xboxlive.dotws.find(i).content %> </strong><span class="price">($<%= @xboxlive.dotws.find(i).price %>)</span></li>
       				<% end %>
       			</ul>	
       		<% end %>
