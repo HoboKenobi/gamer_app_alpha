@@ -1,4 +1,5 @@
 class StaticPagesController < ApplicationController
+
   def home
   end
 
@@ -14,9 +15,6 @@ class StaticPagesController < ApplicationController
   	@walmart = Retailer.find_by(name: "wal-mart")
   	@psn = Retailer.find_by(name: "psn")
   	@xboxlive = Retailer.find_by(name: "xbox live")
-  
-	
-  	
   end
 
   def free

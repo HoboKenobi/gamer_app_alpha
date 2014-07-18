@@ -14,6 +14,7 @@
 ActiveRecord::Schema.define(version: 20140709170951) do
 
   create_table "dotws", force: true do |t|
+    t.string   "platform"
     t.string   "content"
     t.float    "price"
     t.integer  "retailer_id"

@@ -5,4 +5,5 @@ module ApplicationHelper
 		base_title = "The Tavern"
 		"#{base_title} | #{page_title}"
 	end
+
 end
